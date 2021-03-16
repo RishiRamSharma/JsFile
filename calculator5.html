@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator5</title>
+	<style type="text/css">
+		#length{
+			width: 80px;
+		}
+
+
+	</style>
+	<script type="text/javascript">
+
+
+
+
+		function calc(){
+
+			var x1=parseFloat(document.getElementById("x1").value);
+			var x2=parseFloat(document.getElementById("x2").value);
+			var opr=document.getElementById("opr").value;
+			if (opr == "+") {
+				document.getElementById("output").value=x1+x2;
+			}
+			 else if (opr == "-") {
+				document.getElementById("output").value=x1-x2;
+			}
+			else if(opr == "*") {
+				document.getElementById("output").value=x1*x2;
+			}
+			else if(opr == "/") {
+				document.getElementById("output").value=x1/x2;
+			}
+			else if(opr == "%") {
+				document.getElementById("output").value=x1%x2;
+			}
+			else{
+				alert("Not valid");
+			}
+               }
+
+             
+
+			function  increment() {
+		var num1=parseInt(document.getElementById("num").value);
+         var increment=++num1;
+            incr.value=increment;
+         }
+
+
+
+         function decrement(){
+         	var num2=parseInt(document.getElementById("numb").value);
+         	var decrement=--num2;
+         	dec.value=decrement;
+         }
+
+         function assign(){
+         	var a=parseInt(document.getElementById("x").value);
+         	var b=parseInt(document.getElementById("y").value);
+         	var z=a+b;
+         	out.value=z;
+         }
+
+         function assign1(){
+         	var x=parseInt(document.getElementById("x11").value);
+         	var y=parseInt(document.getElementById("y11").value);
+         	var z1=x*y;
+         	out1.value=z1;
+         }
+
+
+
+
+
+
+
+
+
+
+     function e(){
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1<num2)?console.log(true):console.log(false);
+
+
+}
+ function f()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1>num2)?console.log(true):console.log(false);
+
+
+}
+ function g()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1<=num2)?console.log(true):console.log(false);
+
+
+}
+ function h()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1>=num2)?console.log(true):console.log(false);
+
+
+}
+ function i()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1!=num2)?console.log(true):console.log(false);
+
+
+}
+function j()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1==num2)?console.log(true):console.log(false);
+
+
+}
+
+function k()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1&num2)?console.log(true):console.log(false);
+
+
+}
+function l()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1|num2)?console.log(true):console.log(false);
+
+
+}
+function m()
+{
+ var num1 = parseInt(document.getElementById('number1').value);
+	var num2 = parseInt(document.getElementById('number2').value);
+	(num1^num2)?console.log(true):console.log(false);
+}
+         
+         function n()
+	{
+       var num1 = parseInt(document.getElementById('number1').value);
+	   var num2 = parseInt(document.getElementById('number2').value);
+	    var add= num1 +=num2;
+	    console.log(add);
+	}
+    function o()
+	{
+       var num1 = parseInt(document.getElementById('number1').value);
+	   var num2 = parseInt(document.getElementById('number2').value);
+	    var subtract= num1 -=num2;
+	    console.log(subtract);
+	}
+	function p()
+	{
+       var num1 = parseInt(document.getElementById('number1').value);
+	   var num2 = parseInt(document.getElementById('number2').value);
+	    var multiply= num1 *=num2;
+	    console.log(multiply);
+	}
+
+   function q()
+	{
+       var num1 = parseInt(document.getElementById('number1').value);
+	   var num2 = parseInt(document.getElementById('number2').value);
+	    var divide= num1 /=num2;
+	    console.log(divide);
+	}
+
+
+
+		
+          </script>
+</head>
+<body>
+	<div>
+<h1 style="color: green"><u>Calculator using all operation :-</u></h1>
+Number1= &nbsp;&nbsp;<input type="text" id="x1" ><br><br>
+Number2= &nbsp;&nbsp;<input type="text" id="x2" ><br><br>
+Operation= &nbsp;&nbsp;<input type="text" id="opr" ><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="calc()" id="length" style="color: red ">Result</button><br><br>
+
+Ans=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="output"><br>
+</div><br><br>
+
+
+
+
+<h1 style="color: blue">Increment/Decrement</h1><br>
+<div>
+Num1= <input type="text" id="num" >
+	<input type="button" onclick="increment()" value="Increment">
+	Incremenr= <input type="text" id="incr"><br><br>
+
+
+	Num2= <input type="text" id="numb" >
+	<input type="button" onclick="decrement()" value="Decrement">
+	Decrement= <input type="text" id="dec"><br>
+
+</div>
+<h1 style="color: red">Using Assign operator-</h1>
+<div>
+	X= <input type="text" id="x">
+	Y=<input type="text" id="y">
+	<input type="button" onclick="assign()" value="Assign(Z=X+Y)">
+	Z= <input type="text" id="out"><br><br>
+
+	X1= <input type="text" id="x11">
+	Y1=<input type="text" id="y11">
+	<input type="button" onclick="assign1()" value="Assign(Z1=X1*Y1)">
+	Z1= <input type="text" id="out1"><br><br>
+
+       
+</div>
+
+
+
+
+
+
+<div>
+
+	
+<h2 style="color: green"><u>Relational operators</u></h2>
+
+
+<div>
+Number1:  <input type="text" id="number1"><br>
+ Number2: <input type="text" id="number2">
+</div><br><br>
+
+	<button onclick="e()"> < </button>
+	<button onclick="f()"> > </button>
+	<button onclick="g()"> <= </button>
+	<button onclick="h()"> >= </button><br><br>
+
+
+	<h2 style="color: red"><u>Equality operators</u></h2>
+
+
+
+	<button onclick="i()"> != </button>
+	<button onclick="j()">==</button>
+	<br><br>
+	<button onclick="k()">AND</button>
+	<button onclick="l()">OR</button>
+    <button onclick="m()">XOR</button>
+    <br><br>
+    <button onclick="n()">+=</button>
+    <button onclick="o()">-=</button>
+    <button onclick="p()">*=</button>
+    <button onclick="q()">/=</button>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
