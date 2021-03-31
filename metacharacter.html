@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metacharacter Regular Expression Match</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var var1="8735ugygfdsg874t8jhnbcbjhefiuweqr98q3yrbqjb893492grdfwefn32iu";
+var a=/\d/g;           // Find a digit
+var find1=var1.match(a);
+console.log(find1);
+
+var var2="Temporary update or dirty read problem occurs when one transaction updates an item and fails";
+var b=/\s/g;           // Find a whitespace
+var find2=var2.match(b);
+console.log(find2);
+
+var var3="Temporary update or dirty read problem occurs when one transaction updates an item and fails";
+var c=/\btra/;           // Find a match at the beginning of a word
+var find3=var3.match(c);
+console.log(find3);
+
+var var4="Temporary update or dirty read problem occurs when one transaction updates an item and fails";
+var d=/lem\b/;           // Find a match at the end of a word
+var find4=var4.match(d);
+console.log(find4);
+
+
+</script>
+</body>
+</html>
