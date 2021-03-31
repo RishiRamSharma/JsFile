@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Test Method for Finding any string</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var var1="Hii Chloe! I'm Lucifer";
+	var x=/oe/g;   //It searches a string for a pattern, and returns true or false, depending on the result
+	var find1=x.test(var1);
+	console.log(find1);
+
+	var var2="Hii Chloe! I'm Lucifer";
+	var y=/e/g; //It searches a string for a specified pattern, and returns the found text as an object
+	var find2=y.exec(var2);
+	console.log(find2);
+
+</script>
+</body>
+</html>
