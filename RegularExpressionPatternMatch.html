@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression Pattern Match</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+
+
+var var2="Hii I'm Chloe, I mean Chloe Detactive from LAPD!";  //Find any of the characters between the brackets
+var q=/[e]/g;
+var find1=var2.match(q);
+console.log(find1);
+
+var var3="8714184010919810987771234236676623468734355454";  //	Find any of the digits between the brackets
+var r=/[4-8]/g;
+var find2=var3.match(r);
+console.log(find2);
+
+var var4="Luci,Lucifer,Chloe,Deaker,John,Luci,Luci,Lucifer,Chloe,Deaker,John";//Find any of the alternatives separated with |
+var s=/(Lucifer|Chloe)/g;
+var find3=var4.match(s);
+console.log(find3);
+
+
+
+</script>
+</body>
+</html>
