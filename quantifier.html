@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quantifier are used matching</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var var1="The aggregate function may calculate some values before the values have been updated and others after they are updated";
+var a=/e+/g;     //Matches any string that contains at least one 'e'
+var find1=var1.match(a);
+console.log(find1);
+
+var var2="The aggregate function may calculate some values before the values have been updated and others after they are updated";
+var b=/me*/g;      //	Matches any string that contains zero or more occurrences of 'me'
+var find2=var2.match(b);
+console.log(find2);
+
+var var3="152,2504,1369,5489,150,9877,1500";
+var c=/50?/g;      //	Matches any string that contains zero or one occurrences of '50'
+var find3=var3.match(c);
+console.log(find3);
+</script>
+</body>
+</html>
