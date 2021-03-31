@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Match Program</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var var1="Hii I'm Chloe, I mean Chloe Detactive from LAPD!"; //find all matches rather than stopping after the first match
+var p=/Chloe/g;
+var find=var1.match(p);
+console.log(find);
+
+var var2="Hii I'm Chloe, I mean Chloe Detactive from LAPD!";  //Find any of the characters between the brackets
+var q=/[e]/g;
+var find1=var2.match(q);
+console.log(find1);
+
+var var3="8714184010919810987771234236676623468734355454";  //	Find any of the digits between the brackets
+var r=/[4-8]/g;
+var find2=var3.match(r);
+console.log(find2);
+
+var var4="Luci,Lucifer,Chloe,Deaker,John,Luci,Luci,Lucifer,Chloe,Deaker,John";//Find any of the alternatives separated with |
+var s=/(Lucifer|Chloe)/g;
+var find3=var4.match(s);
+console.log(find3);
+</script>
+</body>
+</html>
