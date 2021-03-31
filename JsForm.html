@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>We are making a Form by using JavaScript</title>
+</head>
+<body>
+	<h1 style="color: green"><b> Simple submit form</b></h1>
+<form>
+	<b>Enter your text:</b> <input type="text" id="fname" placeholder="Enter your first name"><br><br>
+
+<b>Enter your password:</b> <input type="text" id="lname" placeholder="Enter your last name"><br><br>
+
+<button type="submit" onclick="fun1()">Click Me</button><br><br>
+
+</form>
+
+<script type="text/javascript">
+	
+function fun1(){
+ var text1=document.getElementById('fname').value;
+ var text2=document.getElementById('lname').value;
+ alert("Your Output is: " +text1+" "+text2);
+ }
+
+</script>
+
+
+
+
+<h1 style="color: red"><b> Simple reset form with fieldset tag</b></h1>
+
+<fieldset id="form2">
+<input type="text" id="fname1" placeholder="Enter your first name"><br><br>
+<input type="text" id="lname1" placeholder="Enter your last name"><br><br>
+<input type="button" onclick="fun2()" value="Click For Reset"><br><br>
+</fieldset>
+
+<script type="text/javascript">
+	
+	function fun2(){
+document.getElementById("form2").reset();
+
+	}
+
+
+</script>
+
+
+</body>
+</html>
